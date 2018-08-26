@@ -14,10 +14,10 @@ addons:
       - python3-dev
 
 before_install:
-  - pip install -r requirements.txt --user
+  - pip install -r requirements.txt
 
 install:
-  - pip install . --user
+  - pip install .
 
 script:
   - cd tests/ && py.test test_cgnswrap.py
