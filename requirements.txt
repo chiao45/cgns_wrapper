@@ -1,4 +1,5 @@
 Cython>=0.25
 numpy
 wget
+future
 pytest

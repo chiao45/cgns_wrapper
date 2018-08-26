@@ -25,7 +25,8 @@ install_requires = [
     'numpy',
     'setuptools',
     'wget',
-    'Cython>=0.25'
+    'Cython>=0.25',
+    'future'
 ]
 
 IS_USER = True if '--user' in sys.argv else False
