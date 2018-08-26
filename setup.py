@@ -49,7 +49,7 @@ h5cfg = h5cfg[1]
 class EmbedPyCGNSBuild(build_py):
     def run(self):
         import os
-        super(EmbedPyCGNSBuiild, self).run()
+        super(EmbedPyCGNSBuild, self).run()
         build_path = self.build_lib + os.sep + 'cgns_wrapper'
         embed_pycgns(PYCGNS_URL, h5cfg, build_path)
 
