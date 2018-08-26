@@ -73,7 +73,7 @@ setup(
     name='cgns_wrapper',
     version=version,
     description='Using CGNS in Python',
-    # long_description=codecs.open('README.rst', encoding='utf-8').read(),
+    long_description=codecs.open('README.rst', encoding='utf-8').read(),
     author='Qiao Chen',
     author_email='benechiao@gmail.com',
     keywords='Math',
