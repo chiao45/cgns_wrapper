@@ -46,7 +46,7 @@ if not found_h5(h5cfg):
 h5cfg = h5cfg[1]
 
 
-class EmbedPyCGNSBuiild(build_py):
+class EmbedPyCGNSBuild(build_py):
     def run(self):
         import os
         super(EmbedPyCGNSBuiild, self).run()
@@ -82,5 +82,5 @@ setup(
     packages=pkgs,
     install_requires=install_requires,
     classifiers=classifiers,
-    cmdclass={'build_py': EmbedPyCGNSBuiild}
+    cmdclass={'build_py': EmbedPyCGNSBuild}
 )
