@@ -82,5 +82,6 @@ setup(
     packages=pkgs,
     install_requires=install_requires,
     classifiers=classifiers,
-    cmdclass={'build_py': EmbedPyCGNSBuild}
+    cmdclass={'build_py': EmbedPyCGNSBuild},
+    data_files=[('', ['hdf5_config.py', 'embed_pycgns.py'])]
 )
