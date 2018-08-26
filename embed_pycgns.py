@@ -30,8 +30,8 @@ def embed_pycgns(url, h5cfg, build_path):
             import configparser as cp
 
         setup_cfg = cp.ConfigParser()
-        setup_cfg['build_ext'] = {}
-        setup_cfg['build_ext']['rpath'] = h5cfg[1]
+        setup_cfg.add_section('build_ext')
+        setup_cfg.set('build_ext', 'rpath', h5cfg[1])
         f = open('setup.cfg', 'w')
         setup_cfg.write(f)
         f.close()

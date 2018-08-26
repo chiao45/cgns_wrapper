@@ -46,7 +46,7 @@ if not found_h5(h5cfg):
 h5cfg = h5cfg[1]
 
 
-class EmbedPyCGNSBuild(build_py):
+class EmbedPyCGNSBuild(build_py, object):
     def run(self):
         import os
         super(EmbedPyCGNSBuild, self).run()
