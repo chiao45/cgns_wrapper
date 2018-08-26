@@ -63,7 +63,7 @@ classifiers = [
     'License :: OSI Approved :: MIT License',
     'Topic :: Scientific/Engineering',
     'Topic :: Software Development',
-    'Operating System :: POSIX',
+    'Operating System :: POSIX :: Linux',
     'Intended Audience :: Science/Research',
 ]
 
