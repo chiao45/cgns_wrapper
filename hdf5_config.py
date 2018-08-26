@@ -79,12 +79,13 @@ def install_from_scratch(is_user, major, minor):
     import tarfile
     import wget
     import os
+    import sys
 
     if is_user:
         from site import USER_BASE
         prefix = USER_BASE + '/cgns_wrapper'
     else:
-        prefix = '/usr/local/cgns_wrapper'
+        prefix = sys.prefix + '/cgns_wrapper'
     minor = str(minor)
     h5v = major + '.' + str(minor)
     tarname = 'hdf5-{}.tar.gz'.format(h5v)
