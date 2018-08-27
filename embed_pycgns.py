@@ -36,7 +36,7 @@ def embed_pycgns(url, h5cfg, build_path):
         setup_cfg.write(f)
         f.close()
     # NOTE that we are in child dir, so use ../
-    extra = ['--app 0', '--val 0', '--dat 0',
+    extra = ['--app 0', '--val 0',
              '--nav 0', '--build-platlib=../{}'.format(build_path)]
     cmds = [sys.executable, 'setup.py', 'build',
             '{}'.format(incs), '{}'.format(libs)]
